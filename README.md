@@ -23,7 +23,7 @@ A full-stack machine learning library built natively for Apple Silicon using the
 
 ### Install from Source
 ```bash
-git clone https://github.com/JordanWang/mlx-ml.git
+git clone https://github.com/Jtw998/mlx-ml.git
 cd mlx-ml
 pip install -e .
 ```
@@ -129,26 +129,13 @@ shap_values = explainer.explain(X_test)
   - KernelSHAP: Model-agnostic SHAP value calculation supporting any model type
   - TreeSHAP: High-performance SHAP explainer for tree-based models, >100x faster than KernelSHAP
 
----
-
-## Performance Benchmarks
-Tested on M2 Max chip:
-
-| Task | Dataset Size | CPU Time | GPU Time | Speedup |
-|------|--------------|----------|----------|---------|
-| Large Matrix Multiplication | 8000x8000 @ 8000x8000 | 0.61s | 0.03s | 23.4x |
-| Linear Regression Solve | 100k samples × 1000 features | 1.62s | 0.05s | 32.4x |
-| KMeans Clustering | 1M samples × 100 features | 12.3s | 0.8s | 15.4x |
-| Naive Bayes Batch Prediction | 10M samples | 12.5s | 0.7s | 17.9x |
-
-Average speedup: 18.2x, maximum speedup up to 78x in matrix computation scenarios. Performance improvement scales with dataset size.
 
 ---
 
 ## Author
-**Jordan Wang**
-- GitHub: [@JordanWang](https://github.com/JordanWang)
-- Project Repository: [https://github.com/JordanWang/mlx-ml](https://github.com/JordanWang/mlx-ml)
+**M5 Max**
+- GitHub: [@Jtw998](https://github.com/Jtw998)
+- Project Repository: [https://github.com/Jtw998/mlx-ml](https://github.com/Jtw998/mlx-ml)
 
 Focused on building high-performance machine learning toolchains for the Apple Silicon ecosystem.
 
